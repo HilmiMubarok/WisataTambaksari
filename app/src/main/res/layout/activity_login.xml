@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hilmimubarok.wisatatambaksari.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Silahkan Login"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Username"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="20dp"
+        android:background="#19e"
+        android:textColor="#fff"
+        android:onClick="LoginMasuk"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Username = hilmi || Password = hilmi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+</LinearLayout>

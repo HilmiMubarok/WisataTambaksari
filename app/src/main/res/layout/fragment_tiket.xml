@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hilmimubarok.wisatatambaksari.TiketFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Hitung Harga Tiket"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtnama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:layout_gravity="bottom"
+                        android:hint="Atas Nama" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Jumlah Orang"/>
+
+                <Button
+                    android:id="@+id/btnplus"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#1ae"
+                    android:textSize="20dp"
+                    android:text="+"/>
+
+                <TextView
+                    android:id="@+id/jmlorang"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/btnmin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#e35"
+                    android:textSize="20dp"
+                    android:text="-"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Pilih Yang Mau Dikunjungi"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp">
+
+                <CheckBox
+                    android:id="@+id/pakan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Pakan"/>
+
+                <CheckBox
+                    android:id="@+id/kuliner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:text="Kuliner"/>
+
+                <CheckBox
+                    android:id="@+id/kerajinan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kerajinan"/>
+
+                <CheckBox
+                    android:id="@+id/pemindangan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="Pemindangan"/>
+
+            </LinearLayout>
+
+            <Button
+                android:onClick="hitungTiket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Hitung Harga Tiket"
+                android:background="#1ae"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Total Harga Tiket"/>
+
+            <TextView
+                android:id="@+id/viewtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="Rp. 0"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kembali"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

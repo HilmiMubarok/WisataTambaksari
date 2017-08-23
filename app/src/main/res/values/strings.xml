@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Wisata Tambaksari</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="konfirm">Yakin Ingin Logout ?</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="y">Ya</string>
+    <string name="t">Tidak</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="wisata">Di desa Tambaksari, ada juga wisatanya. tapi disini wisatanya bersifat edukasi, karena mayoritas penduduk Tambaksari adalah
+        seorang petani lele, maka disini wisatanya tentang dunia perikanan mulai dari cara pembibitan ikan, cara membuat pakan ikan,
+        cara merawat ikan, dan lain-lain. Jadi pengunjung akan mendapatkan ilmu yang sangat berharga disini. </string>
+
+
+    <string name="pakan">
+        Pada wisata pakan ikan ini, nanti pengunjung akan dilatih tentang bagaimana cara membuat pakan ikan, kemudian bagaimana cara merawat
+        ikan, tips dan trick soal pakan ikan dan lain-lain.
+    </string>
+    <string name="pakan2">
+        Para pengunjung juga langsung diperbolehkan praktek. jadi tidak hanya teori saja.
+        Para pengunjung juga didampingi dengan mentor yang sudah berpengalaman dibidangnya. jadi kalau
+        sedang praktek dan ada pertanyaan, bisa disampaikan langsung kepada ahlinya
+    </string>
+    <string name="pakan3">
+        Setelah pengunjung diajari bagaimana membuat pakan ikan dan tata cara perawatannya,
+        pengunjung diperbolehkan untuk membawa pulang hasil buatannya.
+    </string>
+
+    <string name="kuliner">
+        Pada wisata kuliner ini, pengunjung akan dilatih bagaimana cara membuat aneka makanan yang terbuat dari ikan,
+        pengunjung akan dikasih tahu bagaimana proses dari sebuah ikan menjadi makanan, dan pengunjung juga bisa langsung
+        praktek serta didampingi mentor yang sudah berpengalaman
+    </string>
+    <string name="kuliner2">
+        setelah pengunjung berhasil membuat produk pertamanya, pengunjung diperbolehkan untuk
+        membawa pulang sebagai oleh-oleh.
+    </string>
+
+    <string name="kerajinan">
+        Pada wisata kerajinan, pengunjung tidak akan ketemu dengan ikan, melainkan pengunjung akan dilatih
+        bagaimana cara membuat suatu kerajinan. ada banyak macam kerajinan yang akan di edukasikan kepada pengunjung,
+        misalnya air brush, membuat kerajinan dari plastik semen, membuat kerajinan dari kayu, mewarnai kerajinan, dan lain-lain
+    </string>
+    <string name="pemindangan">
+        Pada wisata pemindangan, para pengunjung akan di training bagaimana cara mengelola ikan yang sudah bisa di panen,
+        Apa yang harus dilakukan ketika ikan sudah dipanen, bagaimana cara menjual ikan ke luar daerah, dan lain-lain.
+    </string>
+</resources>
