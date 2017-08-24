@@ -172,6 +172,15 @@
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#08e"
+                android:text="Source code dapat diunduh di link berikut https://github.com/HilmiMubarok/WisataTambaksari"
+                android:gravity="center"/>
+
         </LinearLayout>
 
     </ScrollView>
