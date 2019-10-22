@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
@@ -82,20 +83,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_wisata) {
-            WisataFragment wisataFragment = new WisataFragment();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frameutama, wisataFragment);
-            fragmentTransaction.commit();
+            openNewFragment(new WisataFragment());
         } else if (id == R.id.nav_galeri) {
-            GaleriFragment galeriFragment = new GaleriFragment();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frameutama, galeriFragment);
-            fragmentTransaction.commit();
+            openNewFragment(new GaleriFragment());
         } else if (id == R.id.nav_tentang) {
-            TentangFragment tentangFragment = new TentangFragment();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frameutama, tentangFragment);
-            fragmentTransaction.commit();
+            openNewFragment(new TentangFragment());
         } else if (id == R.id.nav_logout) {
 
             new AlertDialog.Builder(MainActivity.this)
@@ -120,5 +112,11 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void openNewFragment(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frameutama, fragment);
+        fragmentTransaction.commit();
     }
 }

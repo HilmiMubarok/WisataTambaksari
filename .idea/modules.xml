@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WisataTambaksari.iml" filepath="$PROJECT_DIR$/WisataTambaksari.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Coba-wisatatambaksari.iml" filepath="$PROJECT_DIR$/Coba-wisatatambaksari.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wisatatambaksari.iml" filepath="$PROJECT_DIR$/wisatatambaksari.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/wisatatambaksari-app.iml" filepath="$PROJECT_DIR$/app/wisatatambaksari-app.iml" />
     </modules>
   </component>
 </project>
