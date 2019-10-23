@@ -98,9 +98,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:text="Developer"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:text="Pembuat Aplikasi"/>
+                android:textStyle="bold" />
 
 
             <LinearLayout
